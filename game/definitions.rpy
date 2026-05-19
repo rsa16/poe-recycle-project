@@ -23,3 +23,38 @@ default met_paper = False
 default met_food = False
 default met_glass = False
 default met_pesticide = False
+
+# =========================
+# text style
+# =========================
+style say_label: # style for the name of character in dialogue
+    font "MP16REG.ttf"
+    color "#000"
+
+# ========Dialogue=========
+style dialogue_r: # style for Reese dialogue
+    font "MP16REG.ttf"
+    color "#000"
+
+style dialogue_p: # style for Paige dialogue
+    font "MP16REG.ttf"
+    color "#000"
+
+style dialogue_pl: # style for Plato dialogue
+    font "MP16REG.ttf"
+    color "#000"
+
+style dialogue_g: # style for G dialogue
+    font "MP16REG.ttf"
+    color "#000"
+
+style dialogue_pep: # style for Pepton dialogue
+    font "MP16REG.ttf"
+    color "#000"
+# ========================
+
+style menu_choice: # style for menu
+    font "MP16REG.ttf"
+    
+style button_text: # style for buttons
+    font "MP16REG.ttf"
