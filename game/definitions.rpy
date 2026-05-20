@@ -23,3 +23,40 @@ default met_paper = False
 default met_food = False
 default met_glass = False
 default met_pesticide = False
+
+# =========================
+# Images
+# =========================
+image bg house = "bg house.png"
+image bg park = "bg park.png"
+image bg roadside = "bg roadside.png"
+image bg sidewalk = "bg sidewalk.png"
+
+image alu = "alu.png
+image g = "g.png"
+image paige = "paige.png"
+image pepton = "pepton.png"
+image plato = "plato.png"
+image reese = "reese.png"
+
+image emot angry = "emot angry.png"
+image emot blush = "emot blush.png"
+image emot concern = "emot concern.png"
+image emot intrigue = "emot intrigue.png"
+image emot nonch = "emot nonch.png"
+image emot surprise = "emot surprise.png"
+
+image intro accent = "intro accent.png"
+image intro bottom = "intro bottom.png"
+image intro char = "intro char.png"
+image intro reese = "intro reese.png"
+image intro top = "intro top.png"
+
+image name g = "name g.png"
+image name paige = "name paige.png"
+image name pepton = "name pepton.png"
+image name plato = "name plato.png"
+image name reese = "name reese.png"
+
+image outro foreground = "outro foreground.png"
+image outro truck = "outro truck.png"
