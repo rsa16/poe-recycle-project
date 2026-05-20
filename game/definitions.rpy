@@ -32,7 +32,7 @@ image bg park = "bg park.png"
 image bg roadside = "bg roadside.png"
 image bg sidewalk = "bg sidewalk.png"
 
-image alu = "alu.png
+image alu = "alu.png"
 image g = "g.png"
 image paige = "paige.png"
 image pepton = "pepton.png"
