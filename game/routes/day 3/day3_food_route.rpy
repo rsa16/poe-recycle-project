@@ -32,7 +32,7 @@ label day3_food_route:
             r "Oh, heh, I'm not really too active... I prefer staying at home."
             pl "Oh, hmm, that's cool too! I personally CAN'T sit still or do nothing. I always have to be going somewhere, you know? Life is just more fun that way! But don't worry, you're not the only one like that. In fact, G is just like that! Y'know, you and G are both really awesome! Man, you guys are the best."
             r "Oh, G, huh? Well, they and I are definitely compatible then! I'm not really the adventurous type."
-            pl "Yeah! Actually, G told me that they really like to preserve their energy. In fact, they are made of 25% recycled glass, which conserves energy! Isn't that awesome? Many other glass products are also made of around 25% recycled glass. So cool!"
+            pl "Yeah! Actually, G told me that they really like to preserve their energy. In fact, they are made of 25 percent recycled glass, which conserves energy! Isn't that awesome? Many other glass products are also made of around 25 percent recycled glass. So cool!"
             r "I can definitely respect saving that much energy. We're similar in that way!"
 
     return
