@@ -12,17 +12,6 @@ init python:
     if "background" not in config.layers:
         config.layers.insert(0, "background")
 
-    def scaled_emot(emot_image, char_image, max_ratio=0.35):
-        emot_w, _ = renpy.image_size(renpy.displayable(emot_image))
-        char_w, _ = renpy.image_size(renpy.displayable(char_image))
-        
-        max_width = char_w * max_ratio
-        if emot_w > max_width and emot_w > 0:
-            scale = max_width / float(emot_w)
-            return Transform(emot_image, zoom=scale)
-
-        return emot_image
-
 # =========================
 # Affinities
 # =========================
@@ -31,14 +20,6 @@ default affinity_food = 0
 default affinity_glass = 0
 default affinity_plastic_metal = 0
 default affinity_pesticide = 0
-
-# =========================
-# Flags
-# =========================
-default met_paper = False
-default met_food = False
-default met_glass = False
-default met_pesticide = False
 
 # =========================
 # Images
