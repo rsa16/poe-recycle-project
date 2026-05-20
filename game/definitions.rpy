@@ -27,10 +27,10 @@ default met_pesticide = False
 # =========================
 # Images
 # =========================
-image bg house = "bg house.png"
-image bg park = "bg park.png"
-image bg roadside = "bg roadside.png"
-image bg sidewalk = "bg sidewalk.png"
+image bg house = Transform("bg house.png", xysize=(config.screen_width, config.screen_height), fit="contain")
+image bg park = Transform("bg park.png", xysize=(config.screen_width, config.screen_height), fit="contain")
+image bg roadside = Transform("bg roadside.png", xysize=(config.screen_width, config.screen_height), fit="contain")
+image bg sidewalk = Transform("bg sidewalk.png", xysize=(config.screen_width, config.screen_height), fit="contain")
 
 image alu = "char alu.png"
 image g = "char g.png"
