@@ -39,9 +39,9 @@ label day1_intro:
     r "Hold on! Are those..."
 
     "A booming voice echoes down the street."
-    "ALAS! A TRAVELER HAS ARRIVED UPON OUR CONCRETE SHORES!"
-    "Gosh Alu! Do you always have to be so... unelegant with your introductions?!"
-    "You're all insufferable..."
+    "..." "ALAS! A TRAVELER HAS ARRIVED UPON OUR CONCRETE SHORES!"
+    "..." "Gosh Alu! Do you always have to be so... unelegant with your introductions?!"
+    "..." "You're all insufferable..."
     "The voices get louder, and you see a miscellaneous assortment of five figures make their way towards you."
     "A plastic plate with food stains rolls over to you."
 
@@ -81,6 +81,8 @@ label day1_intro:
 
     r "Hi! I'm Reese -"
 
+    hide emot blush
+    with dissolve
     p "Wait, do you mind standing still? You have a little smudge on you. Ugh, and your lid is all crooked."
 
     r "Well, I-"
@@ -88,9 +90,6 @@ label day1_intro:
     p "You should really clean yourself up. This... look... isn't exactly appealing. At least, not to me."
 
     r "I did just fall out of a truck-"
-
-    hide emot blush
-    with dissolve
 
     hide plato
     with dissolve
