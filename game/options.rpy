@@ -27,6 +27,10 @@ define gui.show_name = True
 
 define config.version = "1.0"
 
+## Window size (actual). The game is authored at 1920x1080 and scaled down.
+define config.physical_width = 1280
+define config.physical_height = 720
+
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
