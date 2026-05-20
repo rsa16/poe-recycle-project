@@ -62,15 +62,15 @@ label day1_intro:
     "The plastic plate is quickly shoved aside by a flap of cardboard"
 
     show plato at left_slot
-    show expression scaled_emot("emot blush", "g") at emot_center
     show paige at center_slot
+    show emot blush at emot_center
     with dissolve
     p "You're so chatty it's making my FOLDS ache!!!"
 
     "The cardboard flusteredly turns its attention back to you"
 
     show emot blush at emot_center
-    with dissolveR
+    with dissolve
     p "Oh... hi:) I'm Paige, who are you?"
 
     show screen intro_card("name paige", "paige")
@@ -222,12 +222,18 @@ label day1_intro:
 
     menu:
         "Paige (cardboard)":
-            jump day1_paper_route
+            call day1_paper_route
         "Alu (can)":
-            jump day1_plastic_metal_route
+            call day1_plastic_metal_route
         "G (glass bottle)":
-            jump day1_glass_route
+            call day1_glass_route
         "Plato (used plastic plate)":
-            jump day1_food_route
+            call day1_food_route
         "Pepton (spray bottle)":
-            jump day1_pesticide_route
+            call day1_pesticide_route
+
+    scene black
+    show text "Day 2" with dissolve
+    pause 1.0
+    hide text with dissolve
+    jump day2_intro
