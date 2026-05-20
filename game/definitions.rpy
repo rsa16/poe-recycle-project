@@ -62,7 +62,7 @@ image outro truck = "outro truck.png"
 # =========================
 # Screems
 # =========================
-screen base_bg:
+screen base_bg():
     layer "background"
     add Solid("#000")
 
