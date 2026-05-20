@@ -12,7 +12,7 @@ label day3_paper_route:
             $ affinity_paper += 1
             r "I think you caught me at a bad time... really, I need everything in order."
             p "Well, if that's true, then we might get along pretty well."
-            p "Did you know that creating recycled paper takes 64% less energy and 58% less water? If that isn't enough to convince you, I don't know what is."
+            p "Did you know that creating recycled paper takes 64 percent less energy and 58 percent less water? If that isn't enough to convince you, I don't know what is."
             r "Well, that's what's giving you your youthful glow! I would never have guessed that you were recycled."
             p "Aww... thank you :)"
 
@@ -22,7 +22,7 @@ label day3_paper_route:
             p "Okay, good one, but I'm being serious."
             r "I wasn't kidding..."
             p "Oh, that's... uh... awkward..."
-            p "Hey, you kind of remind me of Crusty... they aren't very orderly, either. In fact, only 5% of food waste is organized and composted. That's not an exaggeration!"
+            p "Hey, you kind of remind me of Crusty... they aren't very orderly, either. In fact, only 5 percent of food waste is organized and composted. That's not an exaggeration!"
             r "As worrisome as that is, maybe Crusty and I would get along."
             p "In that case, you would definitely get along with Crusty better than you would with me."
 

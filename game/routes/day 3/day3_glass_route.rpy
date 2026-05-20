@@ -36,7 +36,7 @@ label day3_glass_route:
             hide emot concern
             with dissolve
             r "Oh wow, that's impressive! I never knew that about Alu."
-            g "Oh... I mean... okay. B-but just so you know, even though Alu brags about that 460 only 9% of plastic ever made has been recycled."
+            g "Oh... I mean... okay. B-but just so you know, even though Alu brags about that 460 only 9 percent of plastic ever made has been recycled."
 
         "Oh, me? Well to be honest... I'm more of a methodical and calculated type of bin myself.":
             $ affinity_paper += 1
@@ -45,6 +45,6 @@ label day3_glass_route:
             g "Oh... You might like Paige then... Have you guys ever met? Paige is always so structured and reliable... and popular..."
             hide emot nonch
             with dissolve
-            g "Did you know that over 84% of corrugated boxes are recycled each year in the EU? Meanwhile only about 40% of glass is accepted in recycling facilities... Gosh I wish I could be like Paige!"
+            g "Did you know that over 84 percent of corrugated boxes are recycled each year in the EU? Meanwhile only about 40 percent of glass is accepted in recycling facilities... Gosh I wish I could be like Paige!"
 
     return
