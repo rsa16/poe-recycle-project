@@ -22,14 +22,10 @@ label day2_food_plastic_metal_route:
         "That's actually a great question! Hmm... I haven't really thought about it too much before, but I'd probably grab a snack of some sort. Gotta stay energized!":
             $ affinity_food += 2
             $ affinity_plastic_metal += 1
+            $ affinity_paper += 1
             r "That's actually a great question! Hmm... I haven't really thought about it too much before, but I'd probably grab a snack of some sort. Gotta stay energized!"
             pl "Wait, really!? Omigosh, that's literally perfect! I love that answer so much, I have to go with you now. You're so cool, we're getting along so well! This is so awesome!!!"
-            alu "\"Energizing\" eatables are commonly purchased in these types of stores by workers. For example, the thousands of recycling-based jobs, which, while incredibly helpful to thousands of people, can be tiring."
-            pl "Ohh, that does make sense!"
-            alu "It does, indeed. In fact, on average, recycling-based work creates nine times more jobs compared to trash-based jobs. Composting creates twice as many jobs compared to landfills, and four times as many jobs as incineration facilities. Additionally, reuse makes 30 times more jobs than landfills."
-            pl "That's actually a really huge amount. I never would've thought it'd be so much!"
-            r "Yeah, that's pretty crazy. But wait, how do you know all of thi-"
-            alu "Additionally, the US recycling industry creates $117 billion in economic activity annually. The Recycling Economic Information report states that 681,000 jobs, $37.8 billion in wages, and $5.5 billion in tax revenues are generated from recycling and reuse based activities. This means there are around 1.17 jobs for every 1,000 tons of recycled material."
+            alu "\"Energizing\" eatables require money to be purchased. The US recycling industry creates $117 billion in economic activity annually. The Recycling Economic Information report states that 681,000 jobs, $37.8 billion in wages, and $5.5 billion in tax revenues are generated from recycling and reuse based activities. This means there are around 1.17 jobs for every 1,000 tons of recycled material."
             pl "Wow, that was... really smart. Dang, you're so awesome!"
             r "First of all, I'm deeply impressed by your knowledge on all of this. Second of all, those are some big numbers."
 
@@ -38,17 +34,13 @@ label day2_food_plastic_metal_route:
             r "Hmm... I'm not sure. Well, I'm more of a drink person. I'd definitely get something refreshing."
             alu "Oh, a fellow enjoyer of the beverage, huh? I know of another just like you, they go by \"G.\" You two would surely find each other's company quite fulfilling."
             pl "Ooh, that's true! You guys would complement each other pretty well!"
-            alu "On top of that, refreshing drinks are commonly purchased in these types of stores by workers. For example, the thousands of recycling-based jobs, which, while incredibly helpful to thousands of people, can be tiring."
-            pl "Ohh, that does make sense!"
-            alu "It does, indeed. In fact, on average, recycling-based work creates nine times more jobs compared to trash-based jobs. Composting creates twice as many jobs compared to landfills, and four times as many jobs as incineration facilities. Additionally, reuse makes 30 times more jobs than landfills."
-            pl "That's actually a really huge amount. I never would've thought it'd be so much!"
-            r "Yeah, that's pretty crazy. But wait, how do you know all of thi-"
-            alu "Additionally, the US recycling industry creates $117 billion in economic activity annually. The Recycling Economic Information report states that 681,000 jobs, $37.8 billion in wages, and $5.5 billion in tax revenues are generated from recycling and reuse based activities. This means there are around 1.17 jobs for every 1,000 tons of recycled material."
+            alu "You see, refreshing drinks require money to be bought. The US recycling industry creates $117 billion in economic activity annually. The Recycling Economic Information report states that 681,000 jobs, $37.8 billion in wages, and $5.5 billion in tax revenues are generated from recycling and reuse based activities. This means there are around 1.17 jobs for every 1,000 tons of recycled material."
             pl "Wow, that was... really smart. Dang, you're so awesome!"
             r "First of all, I'm deeply impressed by your knowledge on all of this. Second of all, those are some big numbers."
 
         "Dude, not trying to be rude, but why would I be in a situation where I'd need to be in a convenience store? I mean, no offense, but still.":
-            $ affinity_paper += 1
+            $ affinity_plastic_metal += 1
+            $ affinity_food -= 2
             r "Dude, not trying to be rude, but why would I be in a situation where I'd need to be in a convenience store? I mean, no offense, but still."
             alu "Oh, dear! There was no need for such a combative stance on the topic! Oh, poor Plato, they don't deserve this - Plato, do tell me you are alright!?"
             pl "Um... ha... It's not a big deal. Uhh... well, I don't know, I guess. I was just a little curious, I didn't mean to be... annoying, or anything."
