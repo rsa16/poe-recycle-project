@@ -17,4 +17,6 @@ label day1_food_route:
 
     pl "It sure has!"
 
+    $ affinity_food += 1
+
     return
