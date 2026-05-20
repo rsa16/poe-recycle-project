@@ -61,3 +61,85 @@ image name reese = "name reese.png"
 
 image outro foreground = "outro foreground.png"
 image outro truck = "outro truck.png"
+
+# =========================
+# Screems
+# =========================
+screen base_bg:
+    layer "background"
+    add Solid("#000")
+
+screen intro_card(name_image, char_image=None):
+    layer "screens"
+    zorder -10
+
+    add "intro char" xalign 0.5 yalign 0.5 at intro_card_in, intro_char_zoom
+    add "intro top" xalign 0.5 yalign 0.5 at intro_card_in
+    add "intro bottom" xalign 0.5 yalign 0.5 at intro_card_in, intro_bottom_slide
+
+    if name_image is not None:
+        add name_image xalign 0.5 yalign 0.5 at intro_card_in
+
+    if char_image is not None:
+        add char_image xalign 0.5 yalign 0.5 at intro_card_in
+
+    add "intro accent" xalign 1.0 yalign 0.5 at intro_card_in
+
+# =========================
+# Positions
+# =========================
+transform intro_card_in:
+    alpha 0.0
+    zoom 0.98
+    linear 0.18 alpha 1.0 zoom 1.0
+
+transform intro_char_zoom:
+    zoom 0.9
+    linear 0.25 zoom 1.0
+
+transform intro_bottom_slide:
+    yoffset 40
+    linear 0.25 yoffset 0
+
+transform flashback_fx:
+    alpha 0.0
+    zoom 1.02
+    linear 0.15 alpha 0.85
+    linear 0.25 zoom 1.0
+
+transform left_slot:
+    xalign 0.25
+    yalign 1.0
+    yoffset -40
+
+transform center_slot:
+    xalign 0.5
+    yalign 1.0
+    yoffset -300
+
+transform right_slot:
+    xalign 0.75
+    yalign 1.0
+    yoffset -300
+
+transform emot_left:
+    xalign 0.25
+    yalign 1.0
+    yoffset -360
+
+transform emot_center:
+    xalign 0.5
+    yalign 1.0
+    yoffset -500
+
+transform emot_right:
+    xalign 0.75
+    yalign 1.0
+    yoffset -500
+
+# =========================
+# Start
+# =========================
+label start:
+    show screen base_bg
+    jump day1_intro
