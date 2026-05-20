@@ -6,6 +6,22 @@ define p = Character("Paige")
 define pl = Character("Plato")
 define g = Character("G")
 define pep = Character("Pepton")
+define alu = Character("Alu")
+
+init python:
+    if "background" not in config.layers:
+        config.layers.insert(0, "background")
+
+    def scaled_emot(emot_image, char_image, max_ratio=0.35):
+        emot_w, _ = renpy.image_size(renpy.displayable(emot_image))
+        char_w, _ = renpy.image_size(renpy.displayable(char_image))
+        
+        max_width = char_w * max_ratio
+        if emot_w > max_width and emot_w > 0:
+            scale = max_width / float(emot_w)
+            return Transform(emot_image, zoom=scale)
+
+        return emot_image
 
 # =========================
 # Affinities
