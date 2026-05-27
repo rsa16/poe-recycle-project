@@ -45,9 +45,9 @@ label day1_intro:
     r "Hold on! Are those..."
 
     "A booming voice echoes down the street."
-    "ALAS! A TRAVELER HAS ARRIVED UPON OUR CONCRETE SHORES!"
-    "Gosh Alu! Do you always have to be so... unelegant with your introductions?!"
-    "You're all insufferable..."
+    "..." "ALAS! A TRAVELER HAS ARRIVED UPON OUR CONCRETE SHORES!"
+    "..." "Gosh Alu! Do you always have to be so... unelegant with your introductions?!"
+    "..." "You're all insufferable..."
     "The voices get louder, and you see a miscellaneous assortment of five figures make their way towards you."
     "A plastic plate with food stains rolls over to you."
 
@@ -68,15 +68,15 @@ label day1_intro:
     "The plastic plate is quickly shoved aside by a flap of cardboard"
 
     show plato at left_slot
-    show expression scaled_emot("emot blush", "g") at emot_center
     show paige at center_slot
+    show emot blush at emot_center
     with dissolve
     p "You're so chatty it's making my FOLDS ache!!!"
 
     "The cardboard flusteredly turns its attention back to you"
 
     show emot blush at emot_center
-    with dissolveR
+    with dissolve
     p "Oh... hi:) I'm Paige, who are you?"
 
     show screen intro_card("name paige", "paige")
@@ -87,6 +87,8 @@ label day1_intro:
 
     r "Hi! I'm Reese -"
 
+    hide emot blush
+    with dissolve
     p "Wait, do you mind standing still? You have a little smudge on you. Ugh, and your lid is all crooked."
 
     r "Well, I-"
@@ -94,9 +96,6 @@ label day1_intro:
     p "You should really clean yourself up. This... look... isn't exactly appealing. At least, not to me."
 
     r "I did just fall out of a truck-"
-
-    hide emot blush
-    with dissolve
 
     hide plato
     with dissolve
@@ -228,12 +227,18 @@ label day1_intro:
 
     menu:
         "Paige (cardboard)":
-            jump day1_paper_route
+            call day1_paper_route
         "Alu (can)":
-            jump day1_plastic_metal_route
+            call day1_plastic_metal_route
         "G (glass bottle)":
-            jump day1_glass_route
+            call day1_glass_route
         "Plato (used plastic plate)":
-            jump day1_food_route
+            call day1_food_route
         "Pepton (spray bottle)":
-            jump day1_pesticide_route
+            call day1_pesticide_route
+
+    scene black
+    show text "Day 2" with dissolve
+    pause 1.0
+    hide text with dissolve
+    jump day2_intro
