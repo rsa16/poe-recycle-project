@@ -89,9 +89,12 @@ screen intro_card(name_image, char_image=None):
     layer "screens"
     zorder -10
 
-    add "intro char" xalign 0.5 yalign 0.5 at intro_card_in, intro_char_zoom
-    add "intro top" xalign 0.5 yalign 0.5 at intro_card_in
-    add "intro bottom" xalign 0.5 yalign 0.5 at intro_card_in, intro_bottom_slide
+    add "intro reese" xalign 0.5 yalign 0.5 at intro_card_in, intro_char_zoom:
+        zoom 1.1
+    add "intro top" xalign 0.5 yalign 0.5 at intro_card_in:
+        zoom 1.1
+    add "intro bottom" xalign 0.5 yalign 0.5 at intro_card_in, intro_bottom_slide:
+        zoom 1.1
 
     if name_image is not None:
         add name_image xalign 0.5 yalign 0.5 at intro_card_in
@@ -107,7 +110,7 @@ screen intro_card(name_image, char_image=None):
 transform intro_card_in:
     alpha 0.0
     zoom 0.98
-    linear 0.18 alpha 1.0 zoom 1.0
+    linear 0.18 alpha 1.0 zoom 1.1
 
 transform intro_char_zoom:
     zoom 0.9
@@ -159,3 +162,4 @@ transform emot_right:
 label start:
     show screen base_bg
     jump day1_intro
+

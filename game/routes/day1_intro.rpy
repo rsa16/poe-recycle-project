@@ -1,6 +1,9 @@
 label day1_intro:
     scene bg roadside
-    show outro truck
+    show outro truck:
+        xalign 0.5
+        yalign 0.5
+        zoom 1.09
     play sound "driving.mp3"
     with dissolve
     pause 0.5
@@ -26,7 +29,10 @@ label day1_intro:
 
     r "I guess that was a pretty nasty fall, since I can't seem to remember anything. But..."
 
-    show outro truck
+    show outro truck:
+        xalign 0.5
+        yalign 0.5
+        zoom 1.09
     with dissolve
     hide outro truck
     with dissolve
